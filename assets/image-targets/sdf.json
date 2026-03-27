@@ -1,0 +1,23 @@
+{
+  "imagePath": "assets/image-targets/sdf_luminance.png",
+  "metadata": null,
+  "name": "sdf.png",
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 0,
+    "width": 500,
+    "height": 763,
+    "isRotated": false,
+    "originalWidth": 500,
+    "originalHeight": 763
+  },
+  "resources": {
+    "originalImage": "sdf_original.png",
+    "croppedImage": "sdf_cropped.png",
+    "thumbnailImage": "sdf_thumbnail.png",
+    "luminanceImage": "sdf_luminance.png"
+  },
+  "created": 1774590985478,
+  "updated": 1774590985478
+}

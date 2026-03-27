@@ -1,1 +1,11 @@
-<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Empty Project</title><meta itemprop="name" content="Empty Project"><meta name="twitter:title" content="Empty Project"><meta property="og:title" content="Empty Project"><meta property="og:site_name" content="Empty Project"><meta name="description" content="Start with a blank project."><meta itemprop="description" content="Start with a blank project."><meta property="og:description" content="Start with a blank project."><meta name="twitter:description" content="Start with a blank project."><script crossorigin="anonymous" src="./external/runtime/runtime.js"></script><script crossorigin="anonymous" src="./external/xr/xr.js" async="true" data-preload-chunks="face, slam"></script></head><body><script src="bundle.js"></script></body></html>
+<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>귀멸의 칼날 AR</title><meta itemprop="name" content="귀멸의 칼날 AR"><meta name="twitter:title" content="귀멸의 칼날 AR"><meta property="og:title" content="귀멸의 칼날 AR"><meta property="og:site_name" content="귀멸의 칼날 AR"><meta name="description" content="이미지를 카메라로 비추면 탄지로가 나타납니다!"><meta itemprop="description" content="이미지를 카메라로 비추면 탄지로가 나타납니다!"><meta property="og:description" content="이미지를 카메라로 비추면 탄지로가 나타납니다!"><meta name="twitter:description" content="이미지를 카메라로 비추면 탄지로가 나타납니다!"><script crossorigin="anonymous" src="./external/runtime/runtime.js"></script><script crossorigin="anonymous" src="./external/xr/xr.js" async="true" data-preload-chunks="face, slam"></script><script>
+const configureImageTargets = () => {
+  fetch('./assets/image-targets/sdf.json')
+    .then(r => r.json())
+    .then(data => {
+      XR8.XrController.configure({ imageTargetData: [data] })
+    })
+}
+if (window.XR8) { configureImageTargets() }
+else { window.addEventListener('xrloaded', configureImageTargets) }
+</script></head><body><script src="bundle.js"></script></body></html>
